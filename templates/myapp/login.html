@@ -1,0 +1,141 @@
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "icon" href =
+  "https://www.logogenie.net/download/preview/medium/7285980"
+          type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>YourThoughts</title>
+<style>
+.p{
+ margin: auto;
+  width: 20%;
+  margin-top:15px;
+ <!-- margin-bottom: 500px; -->
+
+}
+input[type=text] {
+  width: 200%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #F97068;
+}
+input[type=password] {
+  width: 200%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #F97068;
+}
+#p
+{
+position:absolute;
+left:80%;
+top:45%;
+transform:translate(-50%,-50%);
+height:575px;
+width:475px;
+border-radius:5px;
+background-color:#EDF2EF;
+box-sizing:border-box;
+padding:none;
+opacity:1;
+
+}
+.l:hover{
+  height: auto;
+  color:#EDF2EF;
+  transform: 3;
+  opacity: .5;
+  text-decoration: none;
+}
+.l
+{
+ background-color: #F97068;
+  border: none;
+  color: #EDF2EF;
+  height: auto;
+  width:150px;
+  align:left;
+  padding: 14px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  input[type='checkbox'] {
+    width:30px;
+    height:30px;
+    background:green;
+    border-radius:5px;
+    border:1px solid #555;
+}
+h1
+{padding-top: 5px;
+  padding-left:45px;
+margin-top:80px;
+shadow:4px;
+font-family:"Times New Roman", Times, serif;
+text-color:#F97068;
+}
+body {
+  background-image: url('https://wallup.net/wp-content/uploads/2016/03/10/321535-photography-landscape-nature-night-field-trees.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 20px;
+}
+.fa {
+  padding: 10px 8px;
+    font-size: 20px;
+    height:40px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 50px;
+    border-radius: 40%;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa:hover{opacity: 0.6;
+color:#EDF2EF;
+text-decoration: none;}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="p">
+<!--<img src="https://www.technocrazed.com/wp-content/uploads/2015/12/Green-Wallpaper-36.jpg" height="50px" width="50px" align="center">-->
+<font color="#F97068"><h1>YourThoughts</h1>
+  <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-google"></a>
+<div class="p">
+<b bgcolor="white">USERNAME: </b><input height="100" placeholder="USERNAME" type="text" name="username"><br><p>
+<b>PASSWORD: </b><input  height="100" width="50" placeholder="PASSWORD"type="password" name="password"><br><p>
+<input type="checkbox" name="I'm not robot"><br><strong>I'm not robot.
+<div><a href="Home/" class="l">SIGN IN</a><p>
+<a href="Register/" class="l">SIGN UP<p></a>
+</div></div>
+</div>
+
+
+
+</body>
+</html>

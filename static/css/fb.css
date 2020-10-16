@@ -1,0 +1,24 @@
+.h2{
+font-size:3rem;}
+input[type=submit]
+{
+	background-color:#6699ff;
+	font-weight:bold;
+	cursor:default;
+}
+
+input[type=text],[type=Email],[type=password] ,{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+h1
+{
+shadow:4px;
+font-family:"Times New Roman", Times, serif;
+}

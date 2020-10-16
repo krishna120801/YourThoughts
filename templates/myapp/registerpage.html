@@ -1,0 +1,70 @@
+<html lang="en">
+{% load static %}
+{% load bootstrap_tags %}
+{% load widget_tweaks %}
+{% load crispy_forms_tags %}
+{% url 'admin:app_list' app_label=YourThoughts %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"/>
+    <title>YourThoughts</title>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel = "icon" href="https://www.logogenie.net/download/preview/medium/7285980" type = "image/x-icon">
+{% block extrastyle %}
+    <style>
+        #h2{
+font-size:3rem;
+color:#EDF2EF;
+text-align:center;}
+body{background: #EDF2EF
+}
+ input[type=text],[type=Email],[type=password],[type=Select] {
+width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+div.mr-k{
+  margin-right:60%;
+  height:750px;
+}
+ div{ background: #F97068 !important;
+  color:#EDF2EF;
+  }
+  #butoonmanage
+  {
+  margin-top:25px;
+  }
+  select#id_gender:form#for
+  {
+ padding-right:95%;
+  height:fit-content;
+  }
+    </style>
+    {% endblock %}
+</head>
+<body>
+<div id="#Div" class="border border-danger p-3 ml-5 mr-k mt-4">
+    <h2 id="h2">YourThoughts</h2>
+  <form class="form-group form-actions " id="for" action="" method="POST">
+    {% csrf_token %}
+    {{ form.first_name|as_crispy_field }} {{ form.last_name| as_crispy_field }} {{ form.Password| as_crispy_field  }}
+      <div>
+          	<label>Confirm Password:</label>
+			<input type="text" placeholder="Confirm Password" name="password" class="form-control" data-toggle="password">
+      </div>
+     {{ form.email_id|as_crispy_field }}
+      Gender*<br>
+      {{ form.gender | add_class:"btn dropdown-toggle"}}
+      <div>  <a href=""><input class="btn btn-success " id="butoonmanage" type="submit" value="Register"/></a></div>
+   </form>
+</div>
+</body>
+
+</html>
